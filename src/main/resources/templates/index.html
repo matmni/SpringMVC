@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http:/>/www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Witaj na stronie!</title>
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+<link type="text/css" rel="stylesheet"
+      href="../static/css/style.css"
+      th:href="@{/css/style.css}"/>
+    <body>
+        <h1>Witaj na stronie!</h1>
+
+        <form action="/users">
+            <button class="btn btn-success" type="submit"> Użytkownicy</button>
+        </form>
+
+        <form action="/adduser">
+            <button class="btn btn-primary" type="submit"> Dodaj użytkownika</button>
+        </form>
+
+        <form action="/find">
+            <button class="btn btn-warning" type="submit"> Szukaj użytkownika</button>
+        </form>
+
+        <form action="/addapplicationuser">
+            <button class="btn btn-danger" type="submit"> Dodaj użytkownika systemu</button>
+        </form>
+    </body>
+
+</html>
